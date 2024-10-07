@@ -11,16 +11,13 @@ function App()  {
     //BEM 
     <Router>
      <div className="app">
-       <Routes>
-        <Route path='/' element={[<Header/>, <Home/>]}/>
-        <Route path="/checkout10" element={[<Header />,<h1>THIS IS CHECKOUT PAGE</h1>]} />
-        <Route path="/Checkout" element={[ <Checkout />]}/>
-
-       </Routes>
-        
-     </div>
+     <Routes>
+          <Route path="/" element={[<Header key="header" />, <Home key="home" />]} />
+          <Route path="/checkout" element={[<Header key="header" />, <Checkout key="checkout" />]} />
+        </Routes>
+      </div>
     </Router>
- );
-}
+  );
+}  
 
 export default App;
