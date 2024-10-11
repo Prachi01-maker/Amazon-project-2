@@ -17,6 +17,7 @@ const [{ basket}, dispatch] = useStateValue();
             src='http://pngimg.com/uploads/amazon/amazon_PNG11.png'
         />
         </Link>
+
         <div className="header__search">
             <input
              className="header__searchInput"
@@ -26,12 +27,15 @@ const [{ basket}, dispatch] = useStateValue();
         </div>
 
          <div className="header__nav">
+          <Link to='/login'>
           <div className='header__option'>
                <span 
                className='header__optionLineOne'>Hello guest</span> 
                <span 
                className='header__optionLinetwo'>sign in</span> 
             </div>
+            </Link>
+            
 
             <div className='header__option'>
               <span 
@@ -56,8 +60,8 @@ const [{ basket}, dispatch] = useStateValue();
 
 
 
-
-          </div>  
+</div>
+          
       
     </div>
   );
